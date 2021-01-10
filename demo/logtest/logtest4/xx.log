@@ -1,0 +1,4 @@
+2021/01/01 22:38:31.519250 E:/GoPath/src/demo-main/demo/logtest/logtest4/main.go:17: 这是一条很普通的日志。
+[小王子]2021/01/01 22:38:31.539197 E:/GoPath/src/demo-main/demo/logtest/logtest4/main.go:19: 这是一条很普通的日志。
+2021/01/02 14:27:23.633537 E:/GoPath/src/demo-main/demo/logtest/logtest4/main.go:21: 这是一条很普通的日志。
+[小王子]2021/01/02 14:27:23.653682 E:/GoPath/src/demo-main/demo/logtest/logtest4/main.go:23: 这是一条很普通的日志。
