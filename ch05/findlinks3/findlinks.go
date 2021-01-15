@@ -24,6 +24,7 @@ func breadthFirst(f func(item string) []string, worklist []string) {
 
 func crawl(url string) []string {
 	fmt.Println(url)
+	//Extract makes an HTTP GET request to the specified URL, parses the response as HTML, and returns the links in the HTML document.
 	list, err := links.Extract(url)
 	if err != nil {
 		log.Print(err)

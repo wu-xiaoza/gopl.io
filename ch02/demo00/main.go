@@ -1,8 +1,9 @@
 package main
 
 import (
-	"demo/ch2/tempconv"
 	"fmt"
+
+	"gopl.io/ch2/tempconv"
 )
 
 func main() {
