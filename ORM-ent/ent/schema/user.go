@@ -2,6 +2,7 @@ package schema
 
 import (
 	"github.com/facebook/ent"
+	"github.com/facebook/ent/schema/edge"
 	"github.com/facebook/ent/schema/field"
 )
 
@@ -22,5 +23,12 @@ func (User) Fields() []ent.Field {
 
 // Edges of the User.
 func (User) Edges() []ent.Edge {
-	return nil
+	return []ent.Edge{
+		edge.To("cars", Car.Type),
+		// Create an inverse-edge called "groups" of type `Group`
+		// and reference it to the "users" edge (in Group schema)
+		// explicitly using the `Ref` method.
+		edge.From("groups", Group.Type).
+			Ref("users"),
+	}
 }
